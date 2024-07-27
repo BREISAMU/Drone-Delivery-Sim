@@ -9,8 +9,12 @@ function sendCommand(command: string, data: any) {
 
 function connect(host?: string) {
   if (host) {
+    console.log("HOST")
+    console.log(host)
     socket = new WebSocket(`ws://${host}`, "web_server");
   } else {
+    console.log("LOCATION HOST")
+    console.log(location.host)
     socket = new WebSocket(`ws://${location.host}`, "web_server");
   }
   return new Promise<WebSocket>((resolve, reject) => {

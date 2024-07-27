@@ -161,7 +161,6 @@ class TransitService : public JsonSession, public IController {
 int main(int argc, char** argv) {
   if (argc > 1) {
     int port = std::atoi(argv[1]);
-    std::cout << "\n\nSECOND PORT:  " << port << "\n\n";
     std::string webDir = std::string(argv[2]);
     WebServer<TransitService> server(port, webDir);
     while (!stopped) {
