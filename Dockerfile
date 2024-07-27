@@ -19,4 +19,4 @@ WORKDIR /app
 
 RUN make -j
 
-CMD ["make", "run"]
+CMD ["sh", "-c", "./build/bin/transit_service ${PORT} web/dist"]
