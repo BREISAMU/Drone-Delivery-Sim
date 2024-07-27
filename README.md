@@ -2,9 +2,7 @@
 
 ## Write up
 
-### Team number, member names, and x500s.
-
-- Team-010-38
+### Contributors
     - Alex Nagel
     - Hongzheng Li
     - Samuel Breider
