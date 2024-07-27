@@ -23,7 +23,7 @@ class WebServerBase {
    * @param port The port on which the server will listen
    * @param webDir The directory from which to serve web content
    */
-  WebServerBase(int port = std::getenv("PORT"), const std::string& webDir = ".");
+  WebServerBase(int port = 8081, const std::string& webDir = ".");
 
   /**
    * @brief Destructor
@@ -117,7 +117,7 @@ class WebServer : public WebServerBase {
   * @param port The port on which the server will listen
   * @param webDir The directory from which to serve web content
   */
-  WebServer(int port = std::getenv("PORT"), const std::string& webDir = ".")
+  WebServer(int port = 8081, const std::string& webDir = ".")
       : WebServerBase(port, webDir) {}
 
  protected:
@@ -140,7 +140,7 @@ class WebServerWithState : public WebServerBase {
   * @param port The port on which the server will listen
   * @param webDir The directory from which to serve web content
   */
-  WebServerWithState(STATE state, int port = std::getenv("PORT"),
+  WebServerWithState(STATE state, int port = 8081,
                      const std::string& webDir = ".")
       : WebServerBase(port, webDir), state(state) {}
 
