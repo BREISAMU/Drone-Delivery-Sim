@@ -5,10 +5,10 @@
 ### Team number, member names, and x500s.
 
 - Team-010-38
-    - Alex Nagel, nagel213 (Extension 1)
-    - Hongzheng Li, li003458 (Extension 1)
-    - Samuel Breider, breid052 (Extension 6)
-    - Daniel Wang, wan01271 (Extension 6)
+    - Alex Nagel
+    - Hongzheng Li
+    - Samuel Breider
+    - Daniel Wang
 
 ### Project description
 
