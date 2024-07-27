@@ -261,7 +261,7 @@ WebServerBase::WebServerBase(int port, const std::string &webDir)
   std::cout << "\n\n\n" << port << "\n\n\n";
 
   info.port = port;
-  info.iface = NULL;
+  info.iface = "0.0.0.0";
   info.protocols = web_server_protocols;
   info.extensions = NULL;
   info.ssl_cert_filepath = NULL;
