@@ -258,7 +258,7 @@ WebServerBase::WebServerBase(int port, const std::string &webDir)
       port = std::atoi(port_str);
   }
 
-  std::cout << "\n\n\n" << port << "\n\n\n";
+  std::cout << "\n\n\n" << port_str << port << "\n\n\n";
 
   info.port = port;
   info.iface = NULL;
