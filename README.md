@@ -64,9 +64,9 @@ When the human runs near Keller Hall, the simulation notifies the user.
 When the drone completes a delivery, it will celebrate depending on the search algorithm it used.
 When a package is created in the simulation, it will have a random color.
 
-### Extension 1: Battery Packs
+### Battery Life
 
-- **What does it do?**
+- **How does it work?**
 
     We added a battery to the drones in the simulation. The battery has a certain capacity and is drained as the drone operates.
     
@@ -100,9 +100,9 @@ When a package is created in the simulation, it will have a random color.
 
     The feature is automatically enabled when the simulation is run. When the drone does not have enough battery for next pickup and delivery, it will fly to the nearest recharge station to recharge. When the drone is completely drained, the recharge drone will fly to the drone and recharge it.
 
-### Extension 6: Double Delivery
+### Multi Stop Delivery
 
-- **What does it do?**
+- **How does it work?**
 
     We added Points of Interest (POIs) to the simulation so that if a drone is nearby a POI, the user has the option (given by a pop-up) to pick up an additional package
     at the POI and drop it off along with the original package at the original destination. If the user decides not to pick up an additional package, the drone
