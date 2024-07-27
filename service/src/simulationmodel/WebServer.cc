@@ -253,6 +253,13 @@ WebServerBase::WebServerBase(int port, const std::string &webDir)
 
   memset(&info, 0, sizeof(info));
 
+  const char* port_str = std::getenv("PORT");
+  if (port_str) {
+      port = std::atoi(port_str);
+  }
+
+  std::cout << "\n\n\n" << port << "\n\n\n";
+
   info.port = port;
   info.iface = NULL;
   info.protocols = web_server_protocols;
