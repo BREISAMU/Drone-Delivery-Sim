@@ -19,4 +19,4 @@ WORKDIR /app
 
 RUN make -j
 
-CMD ["make", "run"]
+CMD ["make","run"]
