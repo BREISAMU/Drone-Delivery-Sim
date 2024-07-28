@@ -3,4 +3,4 @@ libssl-dev
 zlib1g-dev
 pkg-config
 curl
-nodejs
+npm
