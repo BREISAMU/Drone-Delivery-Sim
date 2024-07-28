@@ -1,3 +1,5 @@
+g++
+nodejs
 build-essential
 libssl-dev
 zlib1g-dev
