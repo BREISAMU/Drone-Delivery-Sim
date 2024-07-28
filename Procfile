@@ -1,1 +1,1 @@
-web: make -j && make run
+web: make run
