@@ -18,5 +18,3 @@ COPY . /app
 WORKDIR /app
 
 RUN make -j
-
-CMD ["sh", "-c", "./build/bin/transit_service ${PORT} web/dist"]
