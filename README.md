@@ -1,6 +1,4 @@
-# CSCI 3081W Final Project
-
-## Write up
+# Drone Delivery Simulation
 
 ### Contributors
     - Alex Nagel
@@ -12,8 +10,7 @@
 
 This project simulates a drone package delivery system with a couple real-world actors near the University of Minnesota Twin Cities campus and 
 implements several design patterns to uphold SOLID principles and develop new extensions to the existing delivery system. The main entities of concern
-are helicopters, humans, packages, drones, and robots. The two new extensions developed include the implementation of battery packs
-and recharge stations for drones, and the implementation of a way for drones to pick up and drop off additional packages along the way to the delivery location.
+are helicopters, humans, packages, drones, and robots.
 
 ### How to build and run the project
 
@@ -76,25 +73,11 @@ When a package is created in the simulation, it will have a random color.
 
     We also added a feature that the once the drone arrives at a recharge station, there is a 10% chance that it will be malfunctioned for 10 seconds. During this time, the drone will not be able to recharge at the station.
 
-- **Why is it significantly interesting?**
-
-    In the real world, drones have limited battery capacity and need to be recharged.
-    And there could be scenarios where the recharge station is malfunctioned and the drone does not have enough battery to complete the delivery, and the recharge drone offers a solution to this problem.
-    This feature adds realism to the simulation.
-
-- **How does it add to existing work?**
-
-    We added a battery to the drones and recharge stations to the simulation. We also added a recharge drone to recharge the drones when the battery is completely drained.
-
-    To connect the drones with the recharge stations and recharge drones, we used vectors to store the recharge stations and recharge drones in the simulation to be retrieved by the drones.
-
-- **Which design patterns did you choose to use in your implementation, and why?**
-   
     We used the **decorator pattern** to add the battery to the drones. This allows us to add the battery to the drones without changing too much on the existing code.
 
     We also used the **factory pattern** to create the recharge stations and recharge drones. This allows us to create the recharge stations and recharge drones without hard-coding the types into the code, promoting flexibility and scalability.
 
-- **Instructions to use this new feature.**
+- **Instructions to use this feature.**
 
     The feature is automatically enabled when the simulation is run. When the drone does not have enough battery for next pickup and delivery, it will fly to the nearest recharge station to recharge. When the drone is completely drained, the recharge drone will fly to the drone and recharge it.
 
@@ -109,20 +92,6 @@ When a package is created in the simulation, it will have a random color.
     These POIs are represented by red balloons floating above hard-coded locations in the simulation. The locations that were hard-coded include the Gopher Pro Shop,
     the Gopher Bookstore, Subway, Raising Canes, and the Pioneer Dining Hall.
 
-- **Why is it significantly interesting?**
-
-    In the real world, deliveries can require multiple intermediate stopping points to pick up all the necessary items for the delivery. For example,
-    if a customer ordered a pizza from Domino's but also ordered a taco from Taco Bell, the delivery driver would have to stop by both Domino's and Taco Bell
-    to deliver the order completely. In this way, the simulation adds an extra consideration that is widely relevant in real life. 
-
-- **How does it add to existing work?**
-
-    In order to create the POI entities effectively, we integrated it with the composite factory that the simulation had. To model the double delivery behavior,
-    we implemented new functions into the Drone and Package classes and also defined new vectors for holding POI and package information in a decorator to the Drone 
-    class.
-
-- **Which design patterns did you choose to use in your implementation, and why?**
-
     We used the **decorator pattern** to include the added functionality of double deliveries for drones. This allows us to add this extra behavior and possible
     other similar behaviors to the drone without changing too much of the drone's base code.
 
@@ -136,10 +105,6 @@ When a package is created in the simulation, it will have a random color.
     When a delivery with the drone is scheduled, if the drone passes close enough to a POI while flying on its route to the destination, a pop-up will appear on the screen, asking 
     the user if they want to add an additional package to the delivery. If the user chooses yes, the drone will beeline straight to the additional package, pick it up, and continue using the old pathing strategy to route to the original destination, where it will drop both packages off. If the user chooses no, the drone will continue on the original route to the destination with no additional package.
 
-### Sprint retrospective
-
-In our project, we had strengths in communication, time-management, and adaptability within the team. We communicated well as the project neared the deadline, we had good time-management to complete most of the implementation of the code within the first two weeks, and adapted quite well to any bugs or problems encountered as we integrated both extensions into the simulation. Overall, we could improve in early communication and planning for future projects. Though we had pretty strong communication near the middle/end, we could have communicated earlier to have a better time integrating both extensions together. We also did not make much use of Jira for planning; we communicated with Discord, which was good enough for our goals. However, planning might’ve gone smoother if we used Jira.
-
 ---
 
 ## Docker link
@@ -151,8 +116,6 @@ In our project, we had strengths in communication, time-management, and adaptabi
 ## Video presentation link
 
 [Video Presentation](https://youtu.be/a7HkonZaUc8)
-
-[Presentation Slides](./pdf/CSCI_3081W_Final_Project.pdf)
 
 ---
 
