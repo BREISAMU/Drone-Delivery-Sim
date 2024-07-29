@@ -100,7 +100,7 @@ When a package is created in the simulation, it will have a random color.
 
     We also used the **factory pattern** to create the POIs. This allows us to create the POIs without hard-coding the types into the code, promoting flexibility and scalability.
 
-- **Instructions to use this new feature.**
+- **Instructions to use this feature.**
 
     When a delivery with the drone is scheduled, if the drone passes close enough to a POI while flying on its route to the destination, a pop-up will appear on the screen, asking 
     the user if they want to add an additional package to the delivery. If the user chooses yes, the drone will beeline straight to the additional package, pick it up, and continue using the old pathing strategy to route to the original destination, where it will drop both packages off. If the user chooses no, the drone will continue on the original route to the destination with no additional package.
